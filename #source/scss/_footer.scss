@@ -1,0 +1,70 @@
+.footer {
+    margin-bottom: 64px;
+    background: #FFFFFF;
+    padding: 35px 0;
+    box-shadow: 0px 0px 16px rgba(140, 140, 140, 0.15);
+}
+
+.footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__col {
+    max-width: 300px;
+
+    .contact-field {
+        margin: 0;
+
+        p {
+            font-size: 15px;
+        }
+        &+.contact-field{
+            margin-top: 15px;
+        }
+    }
+}
+.footer__col-mobile{
+    display: none;
+}
+
+// RESPONSIVE -------------------------------------------- //
+
+@media (max-width:1399.8px) {
+    .footer__col {
+        max-width: 30%;
+        width: 100%;
+        margin-top: 30px;
+        &.socials{
+            display: none;
+        }
+    }
+    .footer__logo{
+        width: 50%;
+    }
+    .footer__col-mobile{
+        display: block;
+        width: 50%;
+        .contact-field{
+            justify-content: flex-end;
+        }
+    }
+    .footer {
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width:991.8px) {
+    .footer__col {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:575.8px) {
+    .footer {
+        margin-bottom: 0;
+        padding: 35px 0 45px;
+    }
+}

@@ -1,0 +1,221 @@
+.certificates-page {
+    padding: 170px 0 80px;
+
+    .row>* {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+.certificates-page__title {
+    margin-bottom: 40px;
+    @include secttitle;
+
+    h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 160%;
+    }
+}
+
+.certificates-page__item {
+    width: 100%;
+    display: block;
+
+    img {
+        border-radius: 15px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.certificates-page {
+    .col-12 {
+        height: 591px;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .col-12:nth-child(odd) {
+        .certificates-page__item {
+            height: 591px;
+        }
+    }
+
+    .col-12:nth-child(even) {
+        .certificates-page__item {
+            height: 294px;
+        }
+    }
+
+    .col-12:nth-of-type(4),
+    .col-12:nth-of-type(5),
+    .col-12:nth-of-type(6),
+    .col-12:nth-of-type(10),
+    .col-12:nth-of-type(11),
+    .col-12:nth-of-type(12),
+    .col-12:nth-of-type(16),
+    .col-12:nth-of-type(17),
+    .col-12:nth-of-type(18),
+    .col-12:nth-of-type(22),
+    .col-12:nth-of-type(24),
+    .col-12:nth-of-type(28),
+    .col-12:nth-of-type(29),
+    .col-12:nth-of-type(30) {
+        align-items: flex-end;
+        margin-top: -297px;
+    }
+
+}
+
+
+
+
+//  RESPONSIVE ------------------------------------- //
+@media (max-width:1399.8px) {
+
+    .certificates-page {
+        padding: 145px 0 80px;
+    }
+
+    .certificates-page .col-12 {
+        height: 510px;
+    }
+    .certificates-page .col-12:nth-child(odd) .certificates-page__item {
+        height: 510px;
+    }
+
+    .certificates-page .col-12:nth-child(2n) .certificates-page__item {
+        height: 255px;
+    }
+
+    .certificates-page {
+
+        .col-12:nth-of-type(4),
+        .col-12:nth-of-type(5),
+        .col-12:nth-of-type(6),
+        .col-12:nth-of-type(10),
+        .col-12:nth-of-type(11),
+        .col-12:nth-of-type(12),
+        .col-12:nth-of-type(16),
+        .col-12:nth-of-type(17),
+        .col-12:nth-of-type(18),
+        .col-12:nth-of-type(22),
+        .col-12:nth-of-type(24),
+        .col-12:nth-of-type(28),
+        .col-12:nth-of-type(29),
+        .col-12:nth-of-type(30) {
+            margin-top: -255px;
+        }
+    }
+}
+
+@media (max-width:1199.8px) {
+    .certificates-page {
+        padding: 130px 0 0px;
+    }
+    .certificates-page .col-12 {
+        height: 425px;
+    }
+    .certificates-page .col-12:nth-child(odd) .certificates-page__item {
+        height: 425px;
+    }
+    .certificates-page .col-12:nth-child(2n) .certificates-page__item {
+        height: 210px;
+    }
+    .certificates-page {
+        .col-12:nth-of-type(4),
+        .col-12:nth-of-type(5),
+        .col-12:nth-of-type(6),
+        .col-12:nth-of-type(10),
+        .col-12:nth-of-type(11),
+        .col-12:nth-of-type(12),
+        .col-12:nth-of-type(16),
+        .col-12:nth-of-type(17),
+        .col-12:nth-of-type(18),
+        .col-12:nth-of-type(22),
+        .col-12:nth-of-type(24),
+        .col-12:nth-of-type(28),
+        .col-12:nth-of-type(29),
+        .col-12:nth-of-type(30) {
+            margin-top: -215px;
+        }
+    }
+
+}
+
+@media (max-width:991.8px) {
+    .certificates-page {
+        padding: 100px 0 0px;
+    }
+    .certificates-page .col-12 {
+        height: 310px;
+    }
+    .certificates-page .col-12:nth-child(odd) .certificates-page__item {
+        height: 310px;
+    }
+    .certificates-page .col-12:nth-child(2n) .certificates-page__item {
+        height: 150px;
+    }
+    .certificates-page {
+        .col-12:nth-of-type(4),
+        .col-12:nth-of-type(5),
+        .col-12:nth-of-type(6),
+        .col-12:nth-of-type(10),
+        .col-12:nth-of-type(11),
+        .col-12:nth-of-type(12),
+        .col-12:nth-of-type(16),
+        .col-12:nth-of-type(17),
+        .col-12:nth-of-type(18),
+        .col-12:nth-of-type(22),
+        .col-12:nth-of-type(24),
+        .col-12:nth-of-type(28),
+        .col-12:nth-of-type(29),
+        .col-12:nth-of-type(30) {
+            margin-top: -165px;
+        }
+    }
+
+}
+
+@media (max-width:767.8px) {
+    .certificates-page__item {
+        height: 250px;
+    }
+    .certificates-page .col-12:nth-child(odd) .certificates-page__item,
+    .certificates-page .col-12,
+    .certificates-page .col-12:nth-child(2n) .certificates-page__item {
+        height: auto;
+    }
+    .certificates-page {
+        .col-12:nth-of-type(4),
+        .col-12:nth-of-type(5),
+        .col-12:nth-of-type(6),
+        .col-12:nth-of-type(10),
+        .col-12:nth-of-type(11),
+        .col-12:nth-of-type(12),
+        .col-12:nth-of-type(16),
+        .col-12:nth-of-type(17),
+        .col-12:nth-of-type(18),
+        .col-12:nth-of-type(22),
+        .col-12:nth-of-type(24),
+        .col-12:nth-of-type(28),
+        .col-12:nth-of-type(29),
+        .col-12:nth-of-type(30) {
+            margin-top: 0px;
+        }
+    }
+}
+
+@media (max-width:575.8px) {
+    .certificates-page {
+        padding: 100px 0 0px;
+    }
+
+    .certificates-page__item {
+        max-width: 320px;
+        margin: 0 auto 20px;
+    }
+}
