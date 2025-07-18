@@ -161,33 +161,20 @@
 
     .contacts__info {
         margin-right: 0px;
-    }
-
-    .contacts__info .contacts__content {
         margin-bottom: 70px;
-        max-width: 700px;
+        width: 100%;
+        .contacts__content {
+            max-width: 700px;
+        }
     }
 
     .contacts__form {
         max-width: 100%;
         width: 100%;
     }
-
-    .top-title {
-        font-size: 56px;
-
-        &:after {
-            height: 17px;
-        }
-    }
-
-
 }
 
 @media(max-width:767.8px) {
-    .topsect {
-        height: 150px;
-    }
 
     .contacts.pb-0 {
         padding: 40px 0 50px;

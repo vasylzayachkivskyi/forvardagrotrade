@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форвард</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.png">
-    <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/lib/slick.css">
-    <link rel="stylesheet" href="css/lib/aos.css">
+    <link rel="icon" type="image/x-icon" href="img/main/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -56,10 +57,10 @@
                             <nav class="header__menu">
                                 <ul>
                                     <li>
-                                        <a href="#">Соєва Олія</a>
+                                        <a href="product-page-oil.html">Соєва Олія</a>
                                     </li>
                                     <li>
-                                        <a href="#">Соєва Макуха</a>
+                                        <a href="product-page-mackuha.html">Соєва Макуха</a>
                                     </li>
                                     <li>
                                         <a href="production.html">Виробництво</a>
@@ -184,7 +185,7 @@
 
             <section class="request mb-100">
                 <picture class="request__img">
-                    <source srcset="img/main/request__bg_mobile.png" media="(max-width: 575.8px)">
+                    <source srcset="img/main/request__bg_mobile.png" media="(max-width: 767.8px)">
                     <img src="img/main/request__bg.jpg" alt="image">
                 </picture>
                 <div class="request__content">
@@ -194,9 +195,9 @@
                     <p data-aos="fade-up" data-aos-delay="400">
                         Залишіть заявку, ми перетелефонуєм і обговоримо всі деталі
                     </p>
-                    <div class="request__content-btn popup_btn" data-popup="request" data-aos="fade-up"
+                    <div class="request__content-btn" data-aos="fade-up"
                         data-aos-delay="600">
-                        <a href="#">Відправити</a>
+                        <a class=" popup_btn"  data-popup="request-popup" href="#">Відправити</a>
                     </div>
                 </div>
             </section>
@@ -288,7 +289,7 @@
     </div>
 
     <!-- POPUP CONSULTATION -->
-    <div class="popup__window request">
+    <div class="popup__window request-popup">
         <div class="container">
             <div class="popup__wrapper">
                 <div class="popup__body">
@@ -322,9 +323,10 @@
     </div>
 
 
-    <script src="js/lib/jquery.js"></script>
-    <script src="js/lib/slick.min.js"></script>
-    <script src="js/lib/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="js/lib/jquery.inputmask.js"></script>
     <script src="js/main.js"></script>

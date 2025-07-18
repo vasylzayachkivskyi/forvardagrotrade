@@ -1,0 +1,260 @@
+.whyus {
+    @include sectmargin;
+}
+
+.whyus__title h2 {
+    @include secttitle;
+    margin-bottom: 50px;
+}
+
+.whyus__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .row {
+        row-gap: 20px;
+    }
+
+    .row>* {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+.whyus__item {
+    width: 100%;
+    height: 276px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 0px rgba(#8C8C8C, 0.15);
+    padding: 30px 15px;
+
+    img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 160%;
+        color: #121212;
+    }
+}
+
+
+.textblock {
+    padding: 50px 0;
+    background: $mainGreen;
+    color: #fff;
+    text-align: center;
+    @include sectmargin;
+
+
+    h2 {
+        font-size: 44px;
+        line-height: 160%;
+        font-family: 'Bebas Neue Cyrillic';
+        font-weight: 400;
+        margin-bottom: 30px;
+        position: relative;
+        text-align: center;
+        color: #fff;
+        z-index: 1;
+
+        span {
+            position: relative;
+            display: inline-block;
+
+            &:after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                width: 110%;
+                height: 20px;
+                background-color: $mainYellow;
+                left: 50%;
+                bottom: 9px;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    p,
+    li,
+    a {
+        font-size: 24px;
+    }
+
+    a {
+        color: $mainYellow;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    ul li {
+        list-style: disc;
+        margin-bottom: 5px;
+        width: fit-content;
+
+        &::marker {
+            font-size: 10px;
+        }
+    }
+
+    ol li {
+        list-style: decimal;
+        margin-bottom: 5px;
+        width: fit-content;
+    }
+}
+
+.textblock__inner {
+    max-width: 828px;
+    margin: 0 auto;
+}
+
+
+.stages {
+    @include sectmargin;
+}
+
+.stages__title h2 {
+    @include secttitle;
+    margin-bottom: 40px;
+}
+
+.stages__image {
+    img {
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+.textsect {
+    @include sectmargin;
+
+    &.productpage {
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Bebas Neue Cyrillic';
+            font-weight: 400;
+            line-height: 110%;
+        }
+    }
+}
+
+
+.textsect__inner {
+    text-align: center;
+
+    p {
+        color: $mainYellow;
+        margin: 0 auto 50px;
+        max-width: 670px;
+        font-size: 24px;
+        line-height: 180%;
+        font-weight: 600;
+    }
+
+    h3 {
+        color: $mainGreen;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 180%;
+        max-width: 966px;
+        margin: 0 auto 40px;
+
+        span {
+            position: relative;
+            display: inline-block;
+
+            &:after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                width: 110%;
+                height: 18px;
+                background-color: $mainYellow;
+                left: 50%;
+                bottom: 9px;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+.request.mt-70 {
+    margin-top: 70px;
+}
+
+
+// //  RESPONSIVE ------------------------------------- //
+@media (max-width:767.8px) {
+
+    .whyus__item {
+        padding: 30px 26px;
+    }
+
+    .textblock {
+
+        a,
+        li,
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .textsect__inner h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:575.8px) {
+
+    .textsect__inner h3 {
+        font-size: 20px;
+    }
+
+    .textsect__inner h3 span:after {
+        height: 15px;
+        bottom: 0px;
+    }
+
+    .textsect__inner p {
+        margin: 0px auto 40px;
+        font-size: 18px;
+    }
+
+    .whyus__item {
+        height: 250px;
+    }
+
+    .textblock h2 {
+        font-size: 34px;
+        margin-bottom: 25px;
+    }
+
+    .textblock h2 span:after {
+        height: 15px;
+    }
+
+    .textblock {
+
+        a,
+        li,
+        p {
+            font-size: 16px;
+        }
+    }
+
+
+}
