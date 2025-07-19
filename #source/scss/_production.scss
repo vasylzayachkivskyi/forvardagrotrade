@@ -147,7 +147,20 @@
         h3 {
             font-family: 'Bebas Neue Cyrillic';
             font-weight: 400;
-            line-height: 110%;
+            line-height: 160%;
+            color: $mainGreen;
+        }
+
+        h2 {
+            font-size: 54px;
+        }
+
+        h3 {
+            font-size: 30px;
+
+            span {
+                font-size: 46px;
+            }
         }
     }
 }
@@ -162,7 +175,6 @@
         max-width: 670px;
         font-size: 24px;
         line-height: 180%;
-        font-weight: 600;
     }
 
     h3 {
@@ -175,17 +187,18 @@
 
         span {
             position: relative;
-            display: inline-block;
+            display: inline-bloc k;
+            font-size: 46px;
 
             &:after {
                 content: '';
                 position: absolute;
                 z-index: -1;
-                width: 110%;
-                height: 18px;
+                width: 105%;
+                height: 20px;
                 background-color: $mainYellow;
                 left: 50%;
-                bottom: 9px;
+                bottom: 0px;
                 transform: translateX(-50%);
             }
         }
@@ -216,7 +229,16 @@
     .textsect__inner h3 {
         font-size: 30px;
     }
+
+    .textsect.productpage h3 span {
+        font-size: 27px;
+    }
+
+    .textsect__inner h3 {
+        margin: 0 auto 30px;
+    }
 }
+
 
 @media (max-width:575.8px) {
 
@@ -239,7 +261,7 @@
     }
 
     .textblock h2 {
-        font-size: 34px;
+        font-size: 32px;
         margin-bottom: 25px;
     }
 
