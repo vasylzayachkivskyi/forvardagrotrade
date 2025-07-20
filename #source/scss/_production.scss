@@ -212,6 +212,9 @@
 
 // //  RESPONSIVE ------------------------------------- //
 @media (max-width:767.8px) {
+    .whyus__title h2 {
+        margin-bottom: 40px;
+    }
 
     .whyus__item {
         padding: 30px 26px;
@@ -228,6 +231,10 @@
 
     .textsect__inner h3 {
         font-size: 30px;
+    }
+
+    .textsect.productpage h3 {
+        font-size: 24px;
     }
 
     .textsect.productpage h3 span {
@@ -262,7 +269,7 @@
 
     .textblock h2 {
         font-size: 32px;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
 
     .textblock h2 span:after {
