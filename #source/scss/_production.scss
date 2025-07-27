@@ -237,13 +237,16 @@
 
     .textsect__inner h3 {
         font-size: 30px;
+        b{
+            font-size: 36px;
+        }
     }
 
     .textsect.productpage h3 {
         font-size: 24px;
     }
 
-    .textsect.productpage h3 span {
+    .textsect.productpage h3 b {
         font-size: 27px;
     }
 
@@ -257,6 +260,9 @@
 
     .textsect__inner h3 {
         font-size: 20px;
+        b{
+            font-size: 26px;
+        }
     }
 
     .textsect__inner h3 b:after {
