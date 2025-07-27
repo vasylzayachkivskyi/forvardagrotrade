@@ -153,13 +153,17 @@
 
         h2 {
             font-size: 54px;
+            b {
+                font-weight: 400;
+            }
         }
 
         h3 {
             font-size: 30px;
 
-            span {
+            b {
                 font-size: 46px;
+                font-weight: 400;
             }
         }
     }
@@ -185,10 +189,12 @@
         max-width: 966px;
         margin: 0 auto 40px;
 
-        span {
+        b {
             position: relative;
-            display: inline-bloc k;
+            display: inline-block;
             font-size: 46px;
+            text-decoration: none;
+            font-weight: 600;
 
             &:after {
                 content: '';
@@ -253,7 +259,7 @@
         font-size: 20px;
     }
 
-    .textsect__inner h3 span:after {
+    .textsect__inner h3 b:after {
         height: 15px;
         bottom: 0px;
     }

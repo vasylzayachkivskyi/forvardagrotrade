@@ -55,9 +55,10 @@
         font-family: 'Bebas Neue Cyrillic';
         width: fit-content;
 
-        span {
+        b {
             position: relative;
             z-index: 1;
+            font-weight: 400;
 
             &:after {
                 content: '';
@@ -791,7 +792,7 @@
             font-size: 34px;
             margin: 0 auto 27px;
 
-            span {
+            b {
                 display: block;
 
                 &:after {
